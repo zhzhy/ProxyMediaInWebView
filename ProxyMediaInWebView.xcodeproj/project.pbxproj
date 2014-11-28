@@ -9,11 +9,18 @@
 /* Begin PBXBuildFile section */
 		1F24F6181A286B1A00B4613B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F24F6171A286B1A00B4613B /* main.m */; };
 		1F24F61B1A286B1A00B4613B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F24F61A1A286B1A00B4613B /* AppDelegate.m */; };
-		1F24F61E1A286B1A00B4613B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F24F61D1A286B1A00B4613B /* ViewController.m */; };
+		1F24F61E1A286B1A00B4613B /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F24F61D1A286B1A00B4613B /* TableViewController.m */; };
 		1F24F6211A286B1A00B4613B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F24F61F1A286B1A00B4613B /* Main.storyboard */; };
 		1F24F6231A286B1A00B4613B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F24F6221A286B1A00B4613B /* Images.xcassets */; };
 		1F24F6261A286B1A00B4613B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F24F6241A286B1A00B4613B /* LaunchScreen.xib */; };
 		1F24F6321A286B1A00B4613B /* ProxyMediaInWebViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F24F6311A286B1A00B4613B /* ProxyMediaInWebViewTests.m */; };
+		1F24F6481A286C1B00B4613B /* AVURLAsset+RequestRemoteFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F24F63D1A286C1B00B4613B /* AVURLAsset+RequestRemoteFile.m */; };
+		1F24F6491A286C1B00B4613B /* ClassMethodPair.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F24F63F1A286C1B00B4613B /* ClassMethodPair.m */; };
+		1F24F64A1A286C1B00B4613B /* MediaLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F24F6411A286C1B00B4613B /* MediaLoader.m */; };
+		1F24F64B1A286C1B00B4613B /* MediaLoaderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F24F6431A286C1B00B4613B /* MediaLoaderFactory.m */; };
+		1F24F64C1A286C1B00B4613B /* NSObject+MethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F24F6451A286C1B00B4613B /* NSObject+MethodSwizzling.m */; };
+		1F24F64D1A286C1B00B4613B /* NSURL+ExtendedURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F24F6471A286C1B00B4613B /* NSURL+ExtendedURL.m */; };
+		1F24F64F1A286D2000B4613B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F24F64E1A286D2000B4613B /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +39,27 @@
 		1F24F6171A286B1A00B4613B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F24F6191A286B1A00B4613B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1F24F61A1A286B1A00B4613B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1F24F61C1A286B1A00B4613B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1F24F61D1A286B1A00B4613B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1F24F61C1A286B1A00B4613B /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		1F24F61D1A286B1A00B4613B /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		1F24F6201A286B1A00B4613B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F24F6221A286B1A00B4613B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1F24F6251A286B1A00B4613B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1F24F62B1A286B1A00B4613B /* ProxyMediaInWebViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProxyMediaInWebViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F24F6301A286B1A00B4613B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F24F6311A286B1A00B4613B /* ProxyMediaInWebViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProxyMediaInWebViewTests.m; sourceTree = "<group>"; };
+		1F24F63C1A286C1B00B4613B /* AVURLAsset+RequestRemoteFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AVURLAsset+RequestRemoteFile.h"; path = "MediaProxy/AVURLAsset+RequestRemoteFile.h"; sourceTree = "<group>"; };
+		1F24F63D1A286C1B00B4613B /* AVURLAsset+RequestRemoteFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AVURLAsset+RequestRemoteFile.m"; path = "MediaProxy/AVURLAsset+RequestRemoteFile.m"; sourceTree = "<group>"; };
+		1F24F63E1A286C1B00B4613B /* ClassMethodPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassMethodPair.h; path = MediaProxy/ClassMethodPair.h; sourceTree = "<group>"; };
+		1F24F63F1A286C1B00B4613B /* ClassMethodPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassMethodPair.m; path = MediaProxy/ClassMethodPair.m; sourceTree = "<group>"; };
+		1F24F6401A286C1B00B4613B /* MediaLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MediaLoader.h; path = MediaProxy/MediaLoader.h; sourceTree = "<group>"; };
+		1F24F6411A286C1B00B4613B /* MediaLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MediaLoader.m; path = MediaProxy/MediaLoader.m; sourceTree = "<group>"; };
+		1F24F6421A286C1B00B4613B /* MedialoaderFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MedialoaderFactory.h; path = MediaProxy/MedialoaderFactory.h; sourceTree = "<group>"; };
+		1F24F6431A286C1B00B4613B /* MediaLoaderFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MediaLoaderFactory.m; path = MediaProxy/MediaLoaderFactory.m; sourceTree = "<group>"; };
+		1F24F6441A286C1B00B4613B /* NSObject+MethodSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+MethodSwizzling.h"; path = "MediaProxy/NSObject+MethodSwizzling.h"; sourceTree = "<group>"; };
+		1F24F6451A286C1B00B4613B /* NSObject+MethodSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MethodSwizzling.m"; path = "MediaProxy/NSObject+MethodSwizzling.m"; sourceTree = "<group>"; };
+		1F24F6461A286C1B00B4613B /* NSURL+ExtendedURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+ExtendedURL.h"; path = "MediaProxy/NSURL+ExtendedURL.h"; sourceTree = "<group>"; };
+		1F24F6471A286C1B00B4613B /* NSURL+ExtendedURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+ExtendedURL.m"; path = "MediaProxy/NSURL+ExtendedURL.m"; sourceTree = "<group>"; };
+		1F24F64E1A286D2000B4613B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F24F64F1A286D2000B4613B /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,13 +102,15 @@
 		1F24F6141A286B1A00B4613B /* ProxyMediaInWebView */ = {
 			isa = PBXGroup;
 			children = (
+				1F24F63B1A286C0900B4613B /* MediaProxy */,
 				1F24F6191A286B1A00B4613B /* AppDelegate.h */,
 				1F24F61A1A286B1A00B4613B /* AppDelegate.m */,
-				1F24F61C1A286B1A00B4613B /* ViewController.h */,
-				1F24F61D1A286B1A00B4613B /* ViewController.m */,
+				1F24F61C1A286B1A00B4613B /* TableViewController.h */,
+				1F24F61D1A286B1A00B4613B /* TableViewController.m */,
 				1F24F61F1A286B1A00B4613B /* Main.storyboard */,
 				1F24F6221A286B1A00B4613B /* Images.xcassets */,
 				1F24F6241A286B1A00B4613B /* LaunchScreen.xib */,
+				1F24F64E1A286D2000B4613B /* AVFoundation.framework */,
 				1F24F6151A286B1A00B4613B /* Supporting Files */,
 			);
 			path = ProxyMediaInWebView;
@@ -117,6 +140,25 @@
 				1F24F6301A286B1A00B4613B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F24F63B1A286C0900B4613B /* MediaProxy */ = {
+			isa = PBXGroup;
+			children = (
+				1F24F63C1A286C1B00B4613B /* AVURLAsset+RequestRemoteFile.h */,
+				1F24F63D1A286C1B00B4613B /* AVURLAsset+RequestRemoteFile.m */,
+				1F24F63E1A286C1B00B4613B /* ClassMethodPair.h */,
+				1F24F63F1A286C1B00B4613B /* ClassMethodPair.m */,
+				1F24F6401A286C1B00B4613B /* MediaLoader.h */,
+				1F24F6411A286C1B00B4613B /* MediaLoader.m */,
+				1F24F6421A286C1B00B4613B /* MedialoaderFactory.h */,
+				1F24F6431A286C1B00B4613B /* MediaLoaderFactory.m */,
+				1F24F6441A286C1B00B4613B /* NSObject+MethodSwizzling.h */,
+				1F24F6451A286C1B00B4613B /* NSObject+MethodSwizzling.m */,
+				1F24F6461A286C1B00B4613B /* NSURL+ExtendedURL.h */,
+				1F24F6471A286C1B00B4613B /* NSURL+ExtendedURL.m */,
+			);
+			name = MediaProxy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +261,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F24F61E1A286B1A00B4613B /* ViewController.m in Sources */,
+				1F24F64D1A286C1B00B4613B /* NSURL+ExtendedURL.m in Sources */,
+				1F24F61E1A286B1A00B4613B /* TableViewController.m in Sources */,
 				1F24F61B1A286B1A00B4613B /* AppDelegate.m in Sources */,
+				1F24F64C1A286C1B00B4613B /* NSObject+MethodSwizzling.m in Sources */,
 				1F24F6181A286B1A00B4613B /* main.m in Sources */,
+				1F24F64A1A286C1B00B4613B /* MediaLoader.m in Sources */,
+				1F24F64B1A286C1B00B4613B /* MediaLoaderFactory.m in Sources */,
+				1F24F6491A286C1B00B4613B /* ClassMethodPair.m in Sources */,
+				1F24F6481A286C1B00B4613B /* AVURLAsset+RequestRemoteFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +345,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -332,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -412,6 +460,7 @@
 				1F24F6371A286B1A00B4613B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F24F6381A286B1A00B4613B /* Build configuration list for PBXNativeTarget "ProxyMediaInWebViewTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +469,7 @@
 				1F24F63A1A286B1A00B4613B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
