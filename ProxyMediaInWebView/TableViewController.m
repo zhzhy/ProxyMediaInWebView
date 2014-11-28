@@ -46,7 +46,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSArray *mediaURLArray = @[[NSURL URLWithString:@"http://u5.a.yximgs.com/upic/2014/07/04/22/BMjAxNDA3MDQyMjA0MjRfODQ0MjQ5MF8yXw==.mp4"], [NSURL URLWithString:@"http://u5.a.yximgs.com/upic/2014/07/04/22/BMjAxNDA3MDQyMjA0MjRfODQ0MjQ5MF8yXw==.mp4"]];
+    NSArray *mediaURLArray = @[[NSURL URLWithString:@"http://so.bq.yymommy.com/song/?song_id=338360"], [NSURL URLWithString:@"http://u5.a.yximgs.com/upic/2014/07/04/22/BMjAxNDA3MDQyMjA0MjRfODQ0MjQ5MF8yXw==.mp4"]];
     
     WebViewController *controller = [[WebViewController alloc] init];
     controller.URL = [mediaURLArray objectAtIndex:indexPath.row];

@@ -11,6 +11,7 @@
 #import "NSURL+ExtendedURL.h"
 
 #import <MobileCoreServices/MobileCoreServices.h>
+#import <UIKit/UIKit.h>
 
 @interface MediaLoader () <NSURLConnectionDataDelegate>
 
@@ -50,6 +51,8 @@
 }
 
 - (void)resourceLoader:(AVAssetResourceLoader *)resourceLoader didCancelLoadingRequest:(AVAssetResourceLoadingRequest *)loadingRequest {
+    [self.mediaConnection cancel];
+    self.mediaConnection = nil;
     [self processLoadingRequest];
     [self.loadingRequest removeObject:loadingRequest];
     
@@ -65,17 +68,32 @@
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     [self.mediaData appendData:data];
-    [self processLoadingRequest];
+    if ([self isiOS6X]) {
+        [self processLoadingRequestWithData:data];
+    }else {
+        [self processLoadingRequest];
+    }
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    [self processLoadingRequest];
+    if ([self isiOS6X]) {
+        [self.loadingRequest removeAllObjects];
+    }else {
+        [self processLoadingRequest];
+    }
+    
     self.mediaConnection = nil;
     
     [self processFinshedMediaLoader];
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+    if ([self isiOS6X]) {
+        for (AVAssetResourceLoadingRequest *loadingRequest in self.loadingRequest) {
+            [loadingRequest finishLoadingWithError:error];
+        }
+    }
+    
     [self.loadingRequest removeAllObjects];
     
     [self processFinshedMediaLoader];
@@ -142,6 +160,20 @@
 - (void)processFinshedMediaLoader {
     [self.resourceLoader setDelegate:nil queue:nil];
     [[MediaLoaderFactory sharedInstance] removeMediaLoader:self];
+}
+
+- (void)processLoadingRequestWithData:(NSData *)data {
+    if (self.HTTPResponse != nil && data != nil) {
+        for (AVAssetResourceLoadingRequest *loadingRequest in self.loadingRequest) {
+            [loadingRequest finishLoadingWithResponse:self.HTTPResponse data:data redirect:nil];
+        }
+    }
+}
+
+#pragma mark OS Version
+
+- (BOOL)isiOS6X {
+    return [[[UIDevice currentDevice] systemVersion] integerValue] == 6;
 }
 
 @end
