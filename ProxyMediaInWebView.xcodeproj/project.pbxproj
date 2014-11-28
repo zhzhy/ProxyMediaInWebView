@@ -20,7 +20,7 @@
 		1F24F64B1A286C1B00B4613B /* MediaLoaderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F24F6431A286C1B00B4613B /* MediaLoaderFactory.m */; };
 		1F24F64C1A286C1B00B4613B /* NSObject+MethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F24F6451A286C1B00B4613B /* NSObject+MethodSwizzling.m */; };
 		1F24F64D1A286C1B00B4613B /* NSURL+ExtendedURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F24F6471A286C1B00B4613B /* NSURL+ExtendedURL.m */; };
-		1F24F64F1A286D2000B4613B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F24F64E1A286D2000B4613B /* AVFoundation.framework */; };
+		1F24F6521A2874D100B4613B /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F24F6511A2874D100B4613B /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +60,8 @@
 		1F24F6461A286C1B00B4613B /* NSURL+ExtendedURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+ExtendedURL.h"; path = "MediaProxy/NSURL+ExtendedURL.h"; sourceTree = "<group>"; };
 		1F24F6471A286C1B00B4613B /* NSURL+ExtendedURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+ExtendedURL.m"; path = "MediaProxy/NSURL+ExtendedURL.m"; sourceTree = "<group>"; };
 		1F24F64E1A286D2000B4613B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1F24F6501A2874D100B4613B /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		1F24F6511A2874D100B4613B /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F24F64F1A286D2000B4613B /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +108,8 @@
 				1F24F61A1A286B1A00B4613B /* AppDelegate.m */,
 				1F24F61C1A286B1A00B4613B /* TableViewController.h */,
 				1F24F61D1A286B1A00B4613B /* TableViewController.m */,
+				1F24F6501A2874D100B4613B /* WebViewController.h */,
+				1F24F6511A2874D100B4613B /* WebViewController.m */,
 				1F24F61F1A286B1A00B4613B /* Main.storyboard */,
 				1F24F6221A286B1A00B4613B /* Images.xcassets */,
 				1F24F6241A286B1A00B4613B /* LaunchScreen.xib */,
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F24F64D1A286C1B00B4613B /* NSURL+ExtendedURL.m in Sources */,
+				1F24F6521A2874D100B4613B /* WebViewController.m in Sources */,
 				1F24F61E1A286B1A00B4613B /* TableViewController.m in Sources */,
 				1F24F61B1A286B1A00B4613B /* AppDelegate.m in Sources */,
 				1F24F64C1A286C1B00B4613B /* NSObject+MethodSwizzling.m in Sources */,

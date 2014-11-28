@@ -1,5 +1,5 @@
 //
-//  TableViewController.h
+//  WebViewController.h
 //  ProxyMediaInWebView
 //
 //  Created by DjangoZhang on 14/11/28.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TableViewController : UITableViewController
+@interface WebViewController : UIViewController
 
-
+@property(nonatomic, strong) NSURL *URL;
 @end
-
