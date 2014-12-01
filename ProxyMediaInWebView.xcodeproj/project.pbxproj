@@ -21,6 +21,7 @@
 		1F24F64C1A286C1B00B4613B /* NSObject+MethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F24F6451A286C1B00B4613B /* NSObject+MethodSwizzling.m */; };
 		1F24F64D1A286C1B00B4613B /* NSURL+ExtendedURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F24F6471A286C1B00B4613B /* NSURL+ExtendedURL.m */; };
 		1F24F6521A2874D100B4613B /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F24F6511A2874D100B4613B /* WebViewController.m */; };
+		1F3104F01A2C1E140015B495 /* AVAssetResourceLoader+ExtendedAssertResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3104EF1A2C1E140015B495 /* AVAssetResourceLoader+ExtendedAssertResourceLoader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		1F24F64E1A286D2000B4613B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		1F24F6501A2874D100B4613B /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		1F24F6511A2874D100B4613B /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		1F3104EE1A2C1E140015B495 /* AVAssetResourceLoader+ExtendedAssertResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AVAssetResourceLoader+ExtendedAssertResourceLoader.h"; path = "MediaProxy/AVAssetResourceLoader+ExtendedAssertResourceLoader.h"; sourceTree = "<group>"; };
+		1F3104EF1A2C1E140015B495 /* AVAssetResourceLoader+ExtendedAssertResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AVAssetResourceLoader+ExtendedAssertResourceLoader.m"; path = "MediaProxy/AVAssetResourceLoader+ExtendedAssertResourceLoader.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +153,8 @@
 			children = (
 				1F24F63C1A286C1B00B4613B /* AVURLAsset+RequestRemoteFile.h */,
 				1F24F63D1A286C1B00B4613B /* AVURLAsset+RequestRemoteFile.m */,
+				1F3104EE1A2C1E140015B495 /* AVAssetResourceLoader+ExtendedAssertResourceLoader.h */,
+				1F3104EF1A2C1E140015B495 /* AVAssetResourceLoader+ExtendedAssertResourceLoader.m */,
 				1F24F63E1A286C1B00B4613B /* ClassMethodPair.h */,
 				1F24F63F1A286C1B00B4613B /* ClassMethodPair.m */,
 				1F24F6401A286C1B00B4613B /* MediaLoader.h */,
@@ -270,6 +275,7 @@
 				1F24F61B1A286B1A00B4613B /* AppDelegate.m in Sources */,
 				1F24F64C1A286C1B00B4613B /* NSObject+MethodSwizzling.m in Sources */,
 				1F24F6181A286B1A00B4613B /* main.m in Sources */,
+				1F3104F01A2C1E140015B495 /* AVAssetResourceLoader+ExtendedAssertResourceLoader.m in Sources */,
 				1F24F64A1A286C1B00B4613B /* MediaLoader.m in Sources */,
 				1F24F64B1A286C1B00B4613B /* MediaLoaderFactory.m in Sources */,
 				1F24F6491A286C1B00B4613B /* ClassMethodPair.m in Sources */,
