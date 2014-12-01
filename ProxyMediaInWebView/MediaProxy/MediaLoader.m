@@ -73,15 +73,14 @@
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     [self.mediaData appendData:data];
-    if ([self isiOS6X]) {
-        [self processLoadingRequestWithData:data];
-    }else {
+    if (![self isiOS6X]) {
         [self processLoadingRequest];
     }
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
     if ([self isiOS6X]) {
+        [self processLoadingRequestWithData:self.mediaData];
         [self.loadingRequest removeAllObjects];
     }else {
         [self processLoadingRequest];
@@ -100,7 +99,6 @@
     }
     
     [self.loadingRequest removeAllObjects];
-    
     [self processFinshedMediaLoader];
 }
 
