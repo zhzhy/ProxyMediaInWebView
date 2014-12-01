@@ -45,7 +45,10 @@
     }
     
     [self.loadingRequest addObject:loadingRequest];
-    [self processLoadingRequest];
+    
+    if (![self isiOS6X]) {
+        [self processLoadingRequest];
+    }
     
     return YES;
 }
@@ -63,7 +66,9 @@
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
     self.HTTPResponse = (NSHTTPURLResponse *)response;
-    [self processLoadingRequest];
+    if (![self isiOS6X]) {
+        [self processLoadingRequest];
+    }
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
