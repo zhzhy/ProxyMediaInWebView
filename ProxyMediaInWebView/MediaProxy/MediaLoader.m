@@ -15,11 +15,11 @@
 
 @interface MediaLoader () <NSURLConnectionDataDelegate>
 
-@property(nonatomic, retain) NSMutableData *mediaData;
-@property(nonatomic, retain) NSMutableArray *loadingRequest;
-@property(nonatomic, retain) NSURLConnection *mediaConnection;
-@property(nonatomic, retain) NSHTTPURLResponse *HTTPResponse;
-@property(nonatomic, assign) AVAssetResourceLoader *resourceLoader;
+@property(nonatomic, strong) NSMutableData *mediaData;
+@property(nonatomic, strong) NSMutableArray *loadingRequest;
+@property(nonatomic, strong) NSURLConnection *mediaConnection;
+@property(nonatomic, strong) NSHTTPURLResponse *HTTPResponse;
+@property(nonatomic, strong) AVAssetResourceLoader *resourceLoader;
 @end
 
 @implementation MediaLoader
@@ -162,6 +162,8 @@
 
 - (void)processFinshedMediaLoader {
     [self.resourceLoader setDelegate:nil queue:nil];
+    self.resourceLoader = nil;
+    
     [[MediaLoaderFactory sharedInstance] removeMediaLoader:self];
 }
 

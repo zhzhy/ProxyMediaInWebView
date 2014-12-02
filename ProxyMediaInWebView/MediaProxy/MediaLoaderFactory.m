@@ -12,8 +12,8 @@ static MediaLoaderFactory *SharedMediaLoaderFactory = nil;
 
 @interface MediaLoaderFactory ()
 
-@property(nonatomic, retain) NSMutableArray *mediaLoaderArray;
-@property(nonatomic, retain) NSRecursiveLock *mediaLoaderArrayLock;
+@property(nonatomic, strong) NSMutableArray *mediaLoaderArray;
+@property(nonatomic, strong) NSRecursiveLock *mediaLoaderArrayLock;
 @end
 
 @implementation MediaLoaderFactory
