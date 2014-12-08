@@ -107,10 +107,11 @@
 - (void)processLoadingRequest {
     NSMutableArray *finishedLoadingRequest = [NSMutableArray array];
     for (AVAssetResourceLoadingRequest *loadingRequest in self.loadingRequest) {
+        BOOL isLoadingFinished = [self isLoadingRequestFinished:loadingRequest.dataRequest];
         [self fillContentInfomationRequest:loadingRequest.contentInformationRequest];
         [self fillResponseData:loadingRequest.dataRequest];
         
-        if ([self isLoadingRequestFinished:loadingRequest.dataRequest]) {
+        if (isLoadingFinished) {
             [loadingRequest finishLoading];
             [finishedLoadingRequest addObject:loadingRequest];
         }
@@ -144,6 +145,7 @@
 - (BOOL)isLoadingRequestFinished:(AVAssetResourceLoadingDataRequest *)dataRequest {
     NSUInteger beginIndex = [self beginIndexOfDataRequest:dataRequest];
     
+    NSLog(@"%d:%d:%d", [self.mediaData length], beginIndex, dataRequest.requestedLength);
     if ([self.mediaData length] >= (beginIndex + dataRequest.requestedLength)) {
         return YES;
     }
